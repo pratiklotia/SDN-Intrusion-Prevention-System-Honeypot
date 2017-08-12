@@ -1,0 +1,3 @@
+alert tcp any any <> $HOME_NET 21 (msg:"FTP Connection attempt"; sid:100001; rev:1;)
+alert tcp any any <> $HOME_NET 80 (msg:"HTTP Connection attempt"; sid:100002; rev:1;)
+alert icmp any any <> $HOME_NET any (msg:"ICMP Flood started"; sid:100003; rev:1;)
