@@ -11,10 +11,15 @@ OpenFlow protocol used for SDN. Snort used for IDS (Intrusion Detection System).
 ![alt text](https://github.com/pratiklotia/SDN-Intrusion-Prevention-System-Honeypot/blob/master/topology-sdn_ips_honey.png)
 
 •	Working of the project & implied Benefits:
+
 	The project uses an Ubuntu v16.04 64-bit Operating System – VM.
+
 	Floodlight, Mininet and Snort (along with dependencies) are installed and configured on the VM.
+
 	For testing purposes, all rules of Snort except the local user rules have been disabled.
+
 	Snort local rules file is configured with signatures of traffic like ICMP and HTTP.
+
 	Floodlight controller is started and it runs on <localhost_IP> on port 8080.
 	Mininet topology is initiated with 1 switch, 5 hosts having IP base of 10.0.0.0/24 with their respective X-terms and Open Virtual Switch interacting with Floodlight Controller using OpenFlow protocol version 1.3.
 	The switch is set as a compatible OVS bridge.
